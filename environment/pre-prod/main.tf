@@ -20,3 +20,9 @@ module "azurerm_subnet" {
   source     = "../../modules/azurerm_subnet"
   subnets    = var.subnets
 }
+
+module "azurerm_public_ip" {
+  depends_on = [module.azurerm_resource_group]
+  source     = "../../modules/azurerm_public_ip"
+  pips       = var.pips
+}

@@ -66,3 +66,19 @@ subnets = {
     address_prefixes     = ["17.11.5.0/24"]
   }
 }
+
+pips = {
+  pip-bastion = {
+    name                = "pip-bastion-dev"
+    location            = "centralindia"
+    resource_group_name = "rg-maka-dev"
+    allocation_method   = "Static"
+  }
+
+  pip-gw = {
+    name                = "pip-gateway-dev"
+    location            = "centralindia"
+    resource_group_name = "rg-maka-dev"
+    allocation_method   = "Static"
+  }
+}

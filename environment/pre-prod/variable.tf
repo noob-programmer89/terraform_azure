@@ -13,3 +13,7 @@ variable "vnets" {
 variable "subnets" {
 
 }
+
+variable "pips" {
+
+}
